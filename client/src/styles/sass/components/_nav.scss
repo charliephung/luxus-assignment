@@ -1,0 +1,79 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: inherit;
+    font-size: 2rem;
+    z-index: 1000;
+    transition: all .5s;
+
+    &--fix {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        color: inherit;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond(laptop) {
+            width: 1000px;
+        }
+
+        @include respond(small-laptop) {
+            width: 800px;
+        }
+
+        @include respond(tab) {
+            width: auto;
+            margin: 0 4rem;
+        }
+
+
+
+    }
+
+    &--border {
+        border-top: 1px solid rgba($color-dark-2, .5);
+        border-bottom: 1px solid rgba($color-dark-2, .5);
+    }
+
+
+
+    @include respond(laptop) {
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        display: flex;
+
+        @include respond(tab) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item--brand {
+        font-weight: 800;
+        font-size: 1.4em;
+    }
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        transition: .3s all;
+
+        &:hover {
+            background-color: rgba(#fff, .15);
+        }
+    }
+
+
+}

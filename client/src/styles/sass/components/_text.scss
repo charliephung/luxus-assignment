@@ -1,0 +1,55 @@
+.white {
+    color: #fff;
+}
+
+.dark {
+    color: $color-dark-2;
+}
+
+.blue {
+    color: $color-blue-1;
+}
+
+.green-2 {
+    color: $color-green-2;
+}
+
+.green-1 {
+    color: $color-green-1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 200;
+}
+
+.bold-text {
+    font-weight: 800;
+}
+
+.text-space-1 {
+    letter-spacing: 1rem;
+}
+
+.text-space-2 {
+    letter-spacing: .5rem;
+}
+
+.text-space-3 {
+    letter-spacing: .2rem;
+}
+
+.h1 {
+    font-size: 4rem;
+}
+
+.h2 {
+    font-size: 3rem;
+}
+
+.h3 {
+    font-size: 2rem;
+}

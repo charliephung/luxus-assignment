@@ -1,0 +1,62 @@
+.container {
+
+    width: 1200px;
+    margin: 0 auto;
+
+    @include respond(laptop) {
+        width: 1000px;
+    }
+
+    @include respond(small-laptop) {
+        width: 800px;
+    }
+
+    @include respond(tab) {
+        width: auto;
+        margin: 0 4rem;
+    }
+
+
+}
+
+.filter-dark {
+    filter: brightness(70%);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-even {
+    justify-content: space-evenly;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.color-bg-green {
+    background-color: rgb(130, 199, 51);
+}
+
+.color-bg-white {
+    background-color: #fff;
+}
+
+.color-bg-lightgrey {
+    background-color: #efefef;
+}
+
+.color-bg-dark {
+    background-color: #252525;
+}

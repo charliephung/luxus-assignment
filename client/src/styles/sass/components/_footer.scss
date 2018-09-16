@@ -1,0 +1,15 @@
+.footer {
+    color: $color-dark-1;
+    font-size: 2rem;
+
+    @include respond(small-laptop) {
+        padding: 0;
+    }
+
+    &__border {
+        background-color: $color-dark-2;
+        height: 60%;
+        width: 5px;
+        border-radius: 20px;
+    }
+}

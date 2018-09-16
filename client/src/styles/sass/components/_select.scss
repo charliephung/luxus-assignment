@@ -1,0 +1,57 @@
+.selector {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    font-size: 2rem;
+    color: $color-dark-2;
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2rem;
+    }
+
+    &__header {
+        position: relative;
+        border: 1px solid rgba($color-dark-2, .3);
+        cursor: pointer;
+
+    }
+
+    &__value {
+        padding: .5rem 2rem;
+        padding-top: 0;
+    }
+
+    &__heading {
+        padding: .5rem 2rem;
+        font-style: italic;
+    }
+
+    &__list {
+        z-index: 999;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        border: 1px solid rgba($color-dark-2, .3);
+        font-size: 2rem;
+        color: $color-dark-2;
+        overflow: hidden;
+    }
+
+    &__item {
+        color: $color-dark-2;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all .5s;
+        position: relative;
+
+        &:hover {
+            background-color: rgba($color-dark-2, .2);
+            width: 100%;
+        }
+
+
+    }
+}

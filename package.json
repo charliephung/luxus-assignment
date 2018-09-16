@@ -1,0 +1,25 @@
+{
+  "name": "luxus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "homepage": "https://charliephung.github.io/luxus-assignment",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "gh-pages -d client/build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "react-flag-kit": "^0.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

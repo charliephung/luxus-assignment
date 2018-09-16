@@ -1,0 +1,17 @@
+.header {
+    height: 80vh;
+
+    &__body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+.my-header-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(#000, .7), rgba($color-blue-1, .7)), url("https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d17b6df4cb810b6860782351027b766&auto=format&fit=crop&w=400&q=60")
+}

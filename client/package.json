@@ -1,0 +1,36 @@
+{
+  "name": "react-ambassador-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-flag-kit": "^0.2.3",
+    "react-icons": "^3.0.5",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-transition-group": "^2.4.0"
+  },
+  "scripts": {
+    "complie:sass": "node-sass src/styles/sass/main.scss src/styles/styles.comp.css",
+    "prefix:sass": "postcss --use autoprefixer -b 'last 10 versions' src/styles/styles.comp.css -o src/styles/styles.prefix.css",
+    "compress:sass": "node-sass src/styles/styles.prefix.css src/styles/styles.css --output-style compressed",
+    "build:sass": "npm-run-all complie:sass  prefix:sass compress:sass",
+    "watch:sass": "nodemon -e scss -x \"npm run complie:sass\"",
+    "start": "NODE_PATH=src/ react-scripts start",
+    "build": "NODE_PATH=src/ react-scripts build ",
+    "test": "NODE_PATH=src/  react-scripts test --env=jsdom",
+    "eject": "NODE_PATH=src/ react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "concurrently": "^4.0.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "npm-run-all": "^4.1.3",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}

@@ -1,0 +1,17 @@
+.border {
+    &--left {
+        margin-left: auto;
+    }
+
+    &--right {
+        margin-right: auto;
+    }
+
+    &--white {
+        background-color: #fff;
+    }
+
+    height: 10px;
+    width: 30%;
+    background-color: #2e313c;
+}

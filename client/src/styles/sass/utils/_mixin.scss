@@ -1,0 +1,51 @@
+// fontt-size 16
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+
+        //500
+        @media only screen and (max-width: 31.25em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab {
+
+        //768px
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==small-laptop {
+
+        //1200px
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==laptop {
+
+        //1440px
+        @media only screen and (max-width: 90em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==desktop {
+
+        //2600
+        @media only screen and (max-width: 162.5em) {
+            @content
+        }
+    }
+
+}

@@ -1,0 +1,28 @@
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: azure;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &--orange {
+        background: $color-orange-1;
+        color: #fff;
+    }
+
+    &--blue {
+        background: $color-blue-1;
+        color: #fff;
+    }
+
+    &--big {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+    }
+}
