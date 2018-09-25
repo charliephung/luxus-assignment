@@ -33,9 +33,6 @@ const Layout = ({ match }) => {
 
   if (match.url === "")
     return <Route path={`${match.url}/:id`} component={Layout} />;
-
-  console.log(layout.length);
-
   if (layout.length === 0) {
     const outputFood = findFood(
       match.url
@@ -71,24 +68,6 @@ const Layout = ({ match }) => {
         />
       )}
       <OptionContainer options={layout} link={`${match.url}`} />
-      {/* <Container className="flex  flex-wrap u-pad-top-2 u-pad-bottom-2  flex-even">
-        {layout.map((ele, index) => (
-          <ZoomIn {...option} key={match.url + "-" + index + "-" + ele.id}>
-            {status => (
-              <Link
-                to={`${match.url}${ele.id === undefined ? "" : `/${ele.id}`}`}
-              >
-                <Card
-                  style={{ transitionDelay: ` ${Math.random() * 0.2}s` }}
-                  className={`fade-${status}`}
-                >
-                  {ele.desc}
-                </Card>
-              </Link>
-            )}
-          </ZoomIn>
-        ))}
-      </Container> */}
       <Route path={`${match.url}/:id`} component={Layout} />
     </Fragment>
   );
